@@ -17,6 +17,7 @@ Definitions:
  (.*) is just all the words inputted between the first part and the second part of the r"string"
  %1 takes the first part in parentheses and puts it in that place. It can go more than just one
 
+Couldn't find a way to print text on a window using this method of a chatbot
 """
 
 pairs = [
@@ -72,14 +73,16 @@ pairs = [
     ],
 ]
 
+maverick_chatbot = Chat(pairs, reflections)
 
-def chat():
-    print(
-        "Welcome to Benjamin Madison's CSE 120 project using NLTK to create a chatbot. When you are done type 'quit'\n What would you like to talk about?")
-    chat = Chat(pairs, reflections)
-    chat.converse()
+def  maverick_chat():
+    print("Welcome to Benjamin Madison's CSE 120 project using NLTK to create a chatbot. When you are done type 'quit'\n What would you like to talk about?")
 
+    maverick_chatbot.converse()
+
+def demo():
+    maverick_chat()
 
 # initiate the conversation
 if __name__ == "__main__":
-    chat()
+    maverick_chat()
