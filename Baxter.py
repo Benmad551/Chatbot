@@ -26,6 +26,10 @@ pairs = [
         r"(.*)",
         ["%1", "Can you clarify?", "I'm confused?"]
     ],
+    [
+        r"quit",
+        ["Goodbye"]
+    ],
 ]
 
 baxter_chatbot = Chat(pairs, reflections)

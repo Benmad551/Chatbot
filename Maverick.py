@@ -36,6 +36,10 @@ pairs = [
         r"My name is (.*)",
         ["Hello %1, what do you need help with?"]
     ],
+    [
+        r"How (.*) you",
+        ["Good!"]
+    ],
     # --------------------------------------
     # About
     # --------------------------------------
@@ -67,6 +71,7 @@ pairs = [
         r"No",
         ["Yes", "I say yes", ]
     ],
+
     [
         r"quit",
         ["I hope you enjoyed this version of the chatbot!", "I hope you liked this!", ]
