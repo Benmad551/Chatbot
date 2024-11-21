@@ -69,7 +69,7 @@ pairs = [
     ],
     [
         r"No",
-        ["Yes", "I say yes", ]
+        ["Okay then"]
     ],
 
     [
@@ -81,7 +81,8 @@ pairs = [
 maverick_chatbot = Chat(pairs, reflections)
 
 def  maverick_chat():
-    print("Welcome to Benjamin Madison's CSE 120 project using NLTK to create a chatbot. When you are done type 'quit'\n What would you like to talk about?")
+    print("Welcome to Benjamin Madison's CSE 120 project using NLTK to create a chatbot. When you are done type 'quit'"
+          "\nWhat would you like to talk about?")
 
     maverick_chatbot.converse()
 
